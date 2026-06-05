@@ -1,9 +1,9 @@
 class Solution {
 public:
     int totalWaviness(int num1, int num2) {
-        int total = 0;
+        long long  total = 0;
 
-        for (int x = num1; x <= num2; x++) {
+        for (long long x = num1; x <= num2; x++) {
             string s = to_string(x);
 
             for (int i = 1; i < s.size() - 1; i++) {
@@ -14,6 +14,6 @@ public:
             }
         }
 
-        return total;
+        return (int)total;
     }
 };
